@@ -1,190 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
 <style>
-    .main{
+    .main {
         position: fixed;
         top: 0;
-        background-color: rgba(8, 20, 87, 0.861);
+        background-color: rgba(11, 24, 93, 0.861);
         opacity: .6;
         width: 100%;
-        height: 7rem;
-    }
-    header{
-        text-align: center;
-         position: fixed;
-        top: 0;
-      z-index: 1;
-      opacity:.9;
-        width: 100%;
-        height: 8rem;
-      
-    }
-    nav{
-        display: flex;
-    }
-    nav .logo{
-        margin-left: 100px;
-        margin-top: 20px;
-display: flex;
+        height: 15vh;
 
     }
-    .logo h1{
+
+    header {
+
+
+
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        opacity: .9;
+        width: 100%;
+        height: 26vh;
+
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        margin-left: 7em;
+        margin-top: 1em;
+        display: flex;
+
+    }
+
+    .logo h1 {
         margin-top: 0;
-        margin-left: 10px;
+        margin-left: 0.5em;
         color: white;
         width: 20vw;
+        font-size: 1.3rem;
     }
-    ul{
-margin-left: 400px;
-    width: 100%;
-   ;
+
+    .logo img {
+
+        margin-top: 0;
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+
         display: flex;
     }
- 
-    ul li{
+
+    ul li {
         text-align: center;
         list-style: none;
         color: white;
-        margin-right: 30px;
-        font-size: 25px;
+        margin-right: 1em;
+        font-size: 1.5rem;
     }
-    .first{
-        margin-top: 9rem;
+
+    .first {
+        margin-top: 10em;
         text-align: center;
         color: rgb(202, 75, 117);
     }
-    .first h1{
+
+    .first h1 {
         font-weight: 600;
-        font-size: 40px;
+        font-size: 2rem;
     }
-   .first  .btn{
-    font-weight: 700;
-    font-size: 40px;
-    color: white;
-  background-color: rgb(248, 94, 145);
-  width: 200px;
-  height: 70px;
+
+    .first .btn {
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: white;
+        background-color: rgb(248, 94, 145);
+        width: 30%;
+        height: auto;
     }
-    .second{
-     margin-top: 20px;
+
+    .second {
+        margin-top: 1em;
         display: flex;
         width: 100%;
     }
-    .zxc{
-        font-weight: 700;
-      
+
+    .zxc {
+        font-weight: 500;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 30px;
-        font-size: 40px;
-    padding: 30px;
-    color: white;
+        margin-right: 0.5em;
+        font-size: 35px;
+
+        color: white;
         text-align: center;
-        width: 50%;
-height: 500px;
+        width: 100vw;
+        height: auto;
         background-color: rgba(9, 9, 80, 0.882);
     }
-    .cxz{
-        width: 50%;
-        height: 35rem;
+
+    .cxz {
+        background-image: url(images\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-blend-mode: multiply;
+        background-color: rgb(16, 81, 97);
+        width: 100%;
+        height: 560px;
     }
-    .media{
-     background-color: black;
-     color: white;
-     padding: 10px;
-        font-size: 30px;
+
+    .media {
+        background-color: black;
+        color: white;
+        padding: 0.5em;
+        font-size: 2rem;
         position: fixed;
         top: 50%;
         right: 0;
     }
-    .media i{
-        margin: 10px;
+
+    .media i {
+        margin: 0.4em;
         display: flex;
     }
-    .third{
+
+    .third {
         display: grid;
-      grid: 450px/ 330px 330px 330px 330px 330px ;
+        grid: 450px/ 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
-        
+
+
 
     }
-    .gif{
-        text-align: center;
-        font-size: 45px;
-        font-weight: 700;
-        color: white;
-        padding-top: 150px;
-        padding-left: 50px;
 
-    }
-   
-    .gif1{
+
+
+    .gif1 {
         background-color: pink;
-        
-        
+
+
     }
-    .gif2{
+
+    .gif2 {
         background-color: skyblue;
 
     }
-    .gif3{
+
+    .gif3 {
         background-color: yellow;
-        
+
 
     }
-    .gif4{
+
+    .gif4 {
         background-color: purple;
     }
-    .gif5{
+
+    .gif5 {
         background-color: lightgreen;
     }
-    .gif i{
-      font-size: 100px;
-     
-    }
-    .forth{
+
+    .forth {
         display: grid;
         grid-template-columns: 300px 300px 300px 300px 300px 300px 300px;
-       grid-template-rows: 300px 300px ;
-       grid-gap: 10px;
-       margin-top: 20px;
-       overflow: scroll;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  background-color:  rgba(9, 9, 80, 0.882);
-  color: white;
-  height: 100px;
+        grid-template-rows: 300px 300px;
+        grid-gap: 10px;
+        margin-top: 20px;
+        overflow: scroll;
+    }
 
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(9, 9, 80, 0.882);
+        color: white;
+
+
+
+        height: 10vh;
+
+
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width:1260px) {
+
+        .logo img {
+            height: 10vh;
+        }
+
+        .first {
+            margin-top: 7em;
+        }
+    }
+
+    @media screen and (max-width:910px) {
+      
+        .main {
+            height: 14vh;
+        }
+        nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        margin-left: 0em;
+        margin-top: 0.5em;
+        display: flex;
+
+    }
+
+    .logo h1 {
+        margin-top: 0;
+        margin-left: 0.5em;
+        color: white;
+        width: 20vw;
+        font-size: 1.3rem;
+    }
+
+    .logo img {
+
+        margin-top: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+
+        display: flex;
+    }
+
+    ul li {
+        text-align: center;
+        list-style: none;
+        color: white;
+        margin-right: 0.5em;
+        font-size: 1.3rem;
+    }
+
+        .first {
+            margin-top: 7em;
+            text-align: center;
+            color: rgb(202, 75, 117);
+        }
+
+        .first h1 {
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        .zxc {
+            font-weight: 200;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.5em;
+            font-size: 25px;
+            min-height: 300px;
+            padding: 2em 0;
+            color: white;
+            text-align: center;
+            width: 100vw;
+            height: auto;
+            background-color: rgba(9, 9, 80, 0.882);
+        }
+
+        .cxz {
+            background-image: url(images\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: rgb(16, 81, 97);
+            width: 100%;
+            height: auto;
+        }
+
+        .third {
+            display: grid;
+            grid: 250px/ 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+
+
+
+        }
+
+        .forth {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px;
+            grid-gap: 10px;
+            margin-top: 20px;
+
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(9, 9, 80, 0.882);
+            color: white;
+            height: 10vh;
+            margin-top: 20px;
+
+            
+        }
+        footer h2{
+            font-size: 20px;
+        }
+
+        .media {
+            background-color: black;
+            color: white;
+            padding: 0.2em;
+            font-size: 2rem;
+            position: fixed;
+            top: 50%;
+            right: 0;
+        }
+
+        .media i {
+            margin: 0.2em;
+            display: flex;
+        }
+    }
+    @media screen and (max-width:768px) {
+        footer h2{
+            font-size: 16px;
+        }
+        .media i {
+            margin: 0.2em;
+            display: flex;
+
+            font-size: 1.5rem;
+        }
+        .logo h1 {
+        margin-top: 0;
+        margin-left: 0.5em;
+        color: white;
+        width: 20vw;
+        font-size: 1.1rem;
+    }
+
+    }
+    @media screen and (max-width:425px) {
+        .logo h1 {
+        margin-top: 0;
+        margin-left: 0.5em;
+        color: white;
+        width: 20vw;
+        font-size: 0.8rem;
+    }
+    .third {
+            display: grid;
+            grid: 150px/ 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+margin-top: 10px;
+
+
+        }
+
+    .zxc {
+            font-weight: 100;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.2em;
+            font-size: 18px;
+            min-height: 300px;
+            padding: 0.5em 0;
+            color: white;
+            text-align: center;
+            width: 100vw;
+            height: auto;
+            background-color: rgba(9, 9, 80, 0.882);
+        }
+
+        .cxz {
+            background-image: url(images\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: rgb(16, 81, 97);
+            width: 100%;
+            height: auto;
+        }
+        .first {
+        margin-top: 5em;
+        text-align: center;
+        color: rgb(202, 75, 117);
+    }
+
+    .first h1 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .first .btn {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgb(248, 94, 145);
+        width: 30%;
+        height: auto;
+    }
+    footer h2{
+        font-size: 13px;
+        text-align: center;
+    }
+    .media i {
+            margin: 0.2em;
+            display: flex;
+
+            font-size: 1.5arem;
+        }
+        footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(9, 9, 80, 0.882);
+        color: white;
+        height: 10vh;
+    }
+    ul {
+
+display: flex;
 }
 
+ul li {
+text-align: center;
+list-style: none;
+color: white;
+margin-right: 0.5em;
+font-size: 0.8rem;
+}
+
+    }
 
 </style>
+
 <body>
     <div class="main"></div>
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="" width="70px" height="70px"><h1>Finlande public school ,America</h1>
+                <img src="logo.png" alt="">
+                <h1>Finlande public school ,America</h1>
             </div>
             <div class="asd">
-            <ul>
-                <li>Home</li>
-                <li>about us </li>
-                <li>Contact us </li>
-                <li>sevices</li>
-                <li>log in</li>
-            </ul>
-        </div>
+                <ul>
+                    <li>Home</li>
+                    <li>about us </li>
+                    <li>Contact us </li>
+                    <li>sevices</li>
+                    <li>log in</li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="first">
@@ -193,10 +490,11 @@ footer{
     </section>
     <section class="second">
         <div class="zxc">
-            We are a learning community dedicated to inspiring success and nurturing well-being. Finnish education excellence is at the heart of all we do, because we believe that everyone deserves the best possible future.
+            We are a learning community dedicated to inspiring success and nurturing well-being. Finnish education
+            excellence is at the heart of all we do, because we believe that everyone deserves the best possible future.
         </div>
         <div class="cxz">
-            <img src="images (1).jpg" alt="" width="100%"  height="560px">
+
         </div>
     </section>
     <div class="media">
@@ -204,31 +502,33 @@ footer{
         <i class="fa fa-twitter"></i>
         <i class="fa fa-instagram"></i>
     </div>
- <section class="third">
-    <div class="gif gif1"><i class="fa fa-book"></i> <br> 35+ <br>Student</div>
-    <div class="gif gif2"><i class="fa fa-user"></i> <br>35+ <br>Student</div>
-    <div class="gif gif3"><i class="fa fa-flag"></i> <br>13+ <br>Staff</div>
-    <div class="gif gif4"><i class="fa fa-phone"></i> <br>13+ <br>Nationalities</div>
-    <div class="gif gif5"><i class="fa fa-book"></i> <br>1:20 <br>Nationalities</div>
- </section>
- <section class="forth">
-<div class="qwe qwe1"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe qwe7"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe qwe8"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
-<div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
- </section>
- <footer>
-    <h2>© 2022   by Finland International School Maldives |  Terms of Use  |   Privacy Policy</h2>
- </footer>
+    <section class="third">
+        <div class="gif gif1"></div>
+        <div class="gif gif2"></div>
+        <div class="gif gif3"></div>
+        <div class="gif gif4"></div>
+        <div class="gif gif5"></div>
+    </section>
+    <section class="forth">
+        <div class="qwe qwe1"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe qwe7"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe qwe8"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child3.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
+        <div class="qwe"> <img src="child2.jpg" alt="" width="100%" height="100%"></div>
+    </section>
+    <footer>
+        <h2>© 2022 by Finland International School Maldives | Terms of Use | Privacy Policy</h2>
+    </footer>
+
 </body>
+
 </html>
